@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>MIKA STARTSIDA</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>MIKA STARTSIDA</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Länka till CSS -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+
+<header>
+    <nav class="menu" id="menu">
+        <div class="menu-item">
+            <a href="#" id="archive-link">ARCHIVE</a>
+        </div>
+        <div class="menu-item">
+            <a href="#" id="mika-link">MIKA MINJA SJÖLUND</a>
+        </div>
+    </nav>
+</header>
+
+<main class="gallery" id="gallery">
+    <div class="image-grid"></div>
+</main>
+
+<div class="content" id="mika-page" style="display: none;">
+    <div class="intro-text">
+        Multidisciplinär industridesigner och utbildad samhällsplanerare med erfarenhet av rumslig gestaltning och tvärvetenskapligt samarbete.
+        Lösningsorienterad och skicklig på att analysera behov och potential samt visualisera idéer och koncept.
+        Med god kommunikationsförmåga och ett användarcentrerat arbetssätt skapar jag lösningar som gör positiv skillnad.
+        Drivs av nyfikenhet och framåtanda och vill arbeta med offentlig gestaltning och utformning av stadsrum för att bidra till hållbara och inkluderande miljöer.
+    </div>
+    <div class="column">
+        <h2 class="special-font">UTBILDNING</h2>
+        <p><span class="small-text">Augusti 2018 - Juni 2021</span><br><strong>Konstfack, BFA Industridesign, Stockholm</strong></p>
+        <p><span class="small-text">Augusti 2017 - Maj 2018</span><br><strong>Nyckelviksskolan, Arkitektur & Design, Stockholm</strong></p>
+        <p><span class="small-text">Augusti 2014 - Juni 2017</span><br><strong>Lunds Universitet, BA Samhällsplanering, Lund</strong></p>
+        <p><span class="small-text">Augusti 2009 - Juni 2012</span><br><strong>Viktor Rydbergs Gymnasium Bild & Form, Stockholm</strong></p>
+    </div>
+
+    <div class="column">
+        <h2>ERFARENHET</h2>
+        <p><span class="small-text">November 2021 - Juli 2024</span><br><strong>Designer, This Way Up</strong></p>
+        <p><span class="small-text">April - November 2021</span><br><strong>Kreativ konsult, HMT Creative</strong></p>
+        <p><span class="small-text">April 2019 - November 2021</span><br><strong>Showroom & Sales Assistant, Sofacompany</strong></p>
+        <p><span class="small-text">Maj - Augusti 2020</span><br><strong>Praktik, HAHA Studio</strong></p>
+        <p><span class="small-text">Januari - Mars 2017</span><br><strong>Praktik, Riksbyggen Bostad</strong></p>
+    </div>
+
+    <div class="column">
+        <h2>KONTAKT</h2>
+        <p><strong>Mail:</strong> mika.sjolund.ms@email.com</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mika-sj%C3%B6lund/" target="_blank">@mikaminjasjolund</a></p>
+        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/mikasjolund/" target="_blank">@mikaminjasjolund</a></p>
+    </div>
+</div>
+
+<!-- 🔥 JavaScript för att byta mellan sidor -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("archive-link").addEventListener("click", function (event) {
+            event.preventDefault();
+            document.getElementById("gallery").style.display = "block";
+            document.getElementById("mika-page").style.display = "none";
+        });
+
+        document.getElementById("mika-link").addEventListener("click", function (event) {
+            event.preventDefault();
+            document.getElementById("gallery").style.display = "none";
+            document.getElementById("mika-page").style.display = "flex";
+        });
+    });
+</script>
+
+<!-- Ladda JavaScript från en separat fil -->
+<script defer src="script.js"></script>
+
+
+</body>
+</html>
+<!-- partial -->
+  <script src='https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js'></script>
+<script src='https://www.gstatic.com/firebasejs/10.0.0/firebase-database.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
